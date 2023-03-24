@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Zheng Liu's Profile</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700" rel="stylesheet">
+    </head>
+    <body>
+        <!---------------------------------intro---------------------------------->
+        <header>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#work-experience">Work Experience</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Project</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div id="about" class="content-wrap">
+                <img class="profile-img" src="./assets/IDphoto.jpg" alt="profile photo">
+                <div class="col-wide">
+                    <h1>Zheng Liu</h1>
+                    <h2>Full-Stack Engineer/Data Scientist</h2>
+                    <p>Software development engineer with a passion of building well-structured functional platform and strong background in Computer Science. Also a Data Scientist with experience in processing data applied ML algorithms and NLP models.</p>
+                </div>
+            </div>
+        </header>
+    </body>
+    <main>
+    <!---------------------- work experience ---------------------->
+    <section id="work-experience" class="work-experience">
+        <div class="work-wrapper">
+            <h2>Work Experience</h2>
+            <div class="job-wrapper">
+                <!---------------------- job 1 ---------------------->
+                <div>
+                    <h3>Data Engineer | Beijing</h3>
+                    <p>Beijing Rainer Technology Co., Ltd.</p>
+                    <p>Oct 2020 – Mar 2021</p>
+                </div>
+                <div class="job-description">
+                    <p>Chief warehouse developer of the target marketing project - took charge of designing and developing the data warehouse. 
+                    The goal of the project was to create a central repository of data from various sources across the bank's operation of a whole province, 
+                    so that data analysts team and business users could easily access and analyze the data to gain insights into customer behavior, product usage, and other key performance indicators.</p>
+                    <p>My primary responsibilities included designing and implementing the data mapping document for the data warehouse, 
+                        writing ETL (Extract, Transform, Load) SQL procedure scripts and Shell scripts to extract data from the large volume of data source databases and transform it into the format required for the data warehouse, 
+                        and creating reports to help illustrate the data. For making sure the data warehouse could handle future growth, we used a combination of partitioning and indexing techniques to optimize the data storage and retrieval.</p>
+                    <p><strong>KEY TECHNOLOGIES: </strong>DB2, SQL server, SQL, Linux, Shell, Kettle, Python</p>
+                </div>
+                <!---------------------- job 2 ---------------------->
+                <div>
+                    <h3>BI Engineer Intern| Beijing</h3>
+                    <p>Beijing Huaxia Diantong Information Technology Co., Ltd.</p>
+                    <p>May 2020 – Oct 2020</p>
+                </div>
+                <div class="job-description">
+                    <p>Internship developer of the dashboard visualization projects - assisted in designing and developing data pipelines to support the organization's BI and analytics needs. 
+                        The goal of the court visualization platform projects was applied SQL and Kettle in building data warehouses and extracted data from various sources across different up-stream company's operation, 
+                        helping create visualizations using PowerBI, and deployed scheduling program on JVM.</p>
+                    <p><strong>KEY TECHNOLOGIES: </strong>MySQl, Oracle, SQL, Kettle, PowerBI, Java</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------- Education ---------------------->
+    <section id="education" class="education">
+        <div class="education-wrapper">
+            <h2>Education</h2>
+            <!------------------ Uni 1 ------------------>
+            <h3>University of Nottingham</h3>
+            <p>Master of Science, major in Artificial Intelligence</p>
+            <ul>
+                <li>Graduation with Merit</li>
+                <li>Core Modules: Machine Learning, Advanced Data Structure and Algorithms, Data Modeling and Analysis, etc.</li>
+                <li>Graduation thesis: Topic Modeling on Google Retrieval History for User Experience</li>
+            </ul>
+            <!------------------ Uni 2 ------------------>
+            <h3>Guangxi Normal University</h3>
+            <p>Bachelor of Science, major in Computer Science</p>
+            <ul>
+                <li>•	GPA: 3.53/4.0 (85.3% - Top 3)</li>
+                <li>Core Modules: Object-Oriented Programming, Advanced Java Software Development, Computer Network, Operation System, Big Data, Web Design, Database, Linear Algebra and Discrete Mathematics, etc.</li>
+                <li>Graduation thesis: Conversational Chatbot based on DuerOS Core</li>
+            </ul>
+        </div>
+    </section>
+    <!---------------------- Representative projects ---------------------->
+    <section id="projects" class="projects">
+        <div class="project-wrapper">
+            <h2>Representative Projects</h2>
+            <div class="proj-wrapper">
+                <!---------------------- proj 1 ---------------------->
+                <div>
+                    <h3>Topic Modelling on Google Retrieval History for Enhancing User Experience</h3>
+                    <p>July 2022 – Sep 2022</p>
+                </div>
+                <div class="proj-description">
+                    <p>Developed an project using Python for enhancing user retrieval experience that will capture the links user explored, then process and analysis the data applied NLP model, Topics Modelling and Coherence Score, finally generate an API depending on history links.</p>
+                    <ul>
+                        <li>Collected a large dataset from browser search history data through SQLite and save as it a csv file applied file IOFlow operations.</li>
+                        <li>Crawled text content in necessary tags through Beautiful Soup library.</li>
+                        <li>Processed a corpus with almost 300,000 tokens in the format of Bag of Words (BoW) by normalized the format of the search queries using SpaCy and NLTK like removing words of Part of Speech (PoS) and stemming words, converting all words into lower case, lemmatization, tokenization.</li>
+                        <li>Identified common themes and topics that appear in the search queries using Latent Dirichlet Allocation (LDA) and Non-negative Matrix Factorization (NMF) and used 4 CPU cores to parallelize and speed up model training.</li>
+                        <li>Visualized the performance of different models by applying Coherence Score using matplotlib library.</li>
+                        <li>Generated an API of project by using RESTful tool and tested the API through sending HTTP requests on Postman.</li>
+                    </ul>
+                </div>
+                <!---------------------- proj 2 ---------------------->
+                <div>
+                    <h3>Target Marketing Platform</h3>
+                    <p>Oct 2020 – Mar 2021</p>
+                </div>
+                <div class="proj-description">
+                    <ul>
+                        <li>Resulted in a significant increase in demand deposit (almost 1,000,000,000 CNY) for a bank located in a city with a population of only 373,000.</li>
+                        <li>Employed communicational skills and delivered a dependable platform for gaining the trust from the clients, 
+                            which helped my stakeholder secure the contract for the second phase of the project achieved a profit of over 5,000,000 CNY for the company.</li>
+                        <li>Extracted necessary data from gigabytes of data (almost 20,000,000 records) across various sources.</li>
+                        <li>Ensured the accuracy of data updating in the data warehouse over 500,000 records periodically (daily/weekly/monthly).</li>
+                        <li>Took charge of establishing and maintaining the data warehouse of the Target Marketing project which supported the accuracy of analysis results throughout the whole project.</li>
+                        <li>Extracted source data from database Oracle and SQL server to DB2 database and normalized data by data cleaning tricks.</li>
+                        <li>Loaded data by developing the Shell scripts and monitored the loading progress and database status through Linux Commands for making sure the data warehouse loading correctly.</li>
+                        <li>Worked closely with the bank staffs including IT operations and business units, to understand their requirements and make sure all the necessary data captured and stored in the data warehouse.</li>
+                    </ul>
+                </div>
+                <!---------------------- proj 3 ---------------------->
+                <div>
+                    <h3>Intelligent Court - Display Visualization Platform</h3>
+                    <p>June 2020 – Oct 2020</p>
+                </div>
+                <div class="proj-description">
+                    <ul>
+                        <li>Communicated with the upstreaming data company for docking the accuracy of the business for the project.</li>
+                        <li>Solved urgent problems occurred on the site of the project like server suspension which is because the scheduling log exception happened on the middleware Tomcat.</li>
+                        <li>Located JDK environmental issues and conducted troubleshooting to resolve a JVM cache pool that overflowed.</li>
+                        <li>Analyzed the source data and cleaning data by using parsing packages on Python.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <main>
+    <!---------------------- Contact Info ---------------------->
+    <footer id="contact">
+        <div class="contact-wrapper">
+            <h2>Let's keep in touch!</h2>
+            <div class="contact-buttons">
+                <a href="https://github.com/GitBugKing" target="_blank" rel="noopener">
+                    <img class="media-pic" src="./assets/github-mark.jpg" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/zheng-liu-392b40232/" target="_blank" rel="noopener">
+                    <img class="media-pic" src="./assets/linkedin.jpg" alt="LinkedIn">
+                </a>
+                <a href="mailto:ukmrbug@outlook.com" target="_blank" rel="noopener">
+                    <img class="media-pic" src="./assets/Outlook.jpg" alt="outlook_email">
+                </a>
+            </div>
+        </div>
+    </footer>
+</html> 
