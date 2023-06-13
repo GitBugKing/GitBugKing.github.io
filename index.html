@@ -20,8 +20,19 @@
                 <img class="profile-img" src="./assets/IDphoto.jpg" alt="profile photo">
                 <div class="col-wide">
                     <h1>Zheng Liu</h1>
-                    <h2>Full-Stack Engineer/Data Scientist</h2>
-                    <p>Software development engineer with a passion of building well-structured functional platform and strong background in Computer Science. Also a Data Scientist with experience in processing data applied ML algorithms and NLP models.</p>
+                    <h2>Back-end Engineer/Data Scientist</h2>
+                    <p>Software development engineer with experience of building data warehouse and well-structured functional platform and strong background in Computer Science (AI). Skilled in building scalable, high-performance systems and services to support a wide range of business needs. 
+                        Interested in cutting-edge technologies and combined them for solving real-world problems and delivering best solutions to real customers.</p>
+                    <ul>
+                        <li>Strengthened JAVA fundamentals, comprehended IO, multi-threading, collections, and other basics. Familiarized with commonly used data structures and algorithms.</li>
+                        <li>Delved into the underlying principles of JVM and garbage collection mechanisms.</li>
+                        <li>Understood the underlying principles of concurrent programming and reviewed source code of commonly used utility classes under JUC, comprehending the thread pool mechanism.</li>
+                        <li>Gained in-depth knowledge of MySQL's underlying principles, including transaction isolation levels, InnoDB storage engine, and covered indexes. Demonstrated proficiency in SQL optimization techniques, enabling efficient and high-performance query execution.</li>
+                        <li>Mastered the core data structures and usage scenarios of Redis, comprehending various caching scenarios with high concurrency, such as cache avalanche and cache penetration.</li>
+                        <li>Gained an in-depth understanding of the design principles and underlying architecture of open-source frameworks like Spring, Spring MVC, MyBatis, and Spring Boot.</li>
+                        <li>Proficient in using version control tools like Git and Maven, familiar with commonly used Linux commands.</li>
+                        <li>Experienced in designing and applying distributed systems, well-versed in distributed, caching, and messaging mechanisms, with relevant development experience.</li>   
+                    </ul>
                 </div>
             </div>
         </header>
@@ -89,6 +100,34 @@
         <div class="project-wrapper">
             <h2>Representative Projects</h2>
             <div class="proj-wrapper">
+                <!---------------------- proj 4 ---------------------->
+                <div>
+                    <h3>Distributed Microservice E-commerce Platform - Back-End Focused</h3>
+                    <p>Mar 2023 – Jun 2023</p>
+                </div>
+                <div class="proj-description">
+                    <p>Developed a back-end focused comprehensive B2C platform, inspired by modern online shopping experiences. 
+                        The project aimed to provide a robust and scalable infrastructure for e-commerce applications, emphasizing secure and efficient data management and processing. 
+                        It is implemented using SpringBoot, SpringCloudNetflix, and MyBatis-Plus, and deployed using Docker containers. 
+                        The back-end management system includes seven major modules: system management, product system, promotion marketing, inventory system, order system, user system, and content management. 
+                        The front-end e-commerce system includes modules such as user login, registration, product details, shopping cart, and order processing</p>
+                    <ul>
+                        <li>Implemented Nginx as a reverse proxy to route requests from the front-end to various microservice modules in the E-commerce system. 
+                            Stored front-end static resources in the Nginx server to achieve high-performance dynamic and static separation.</li>
+                        <li>Utilized Netflix SMS service and Redis to prevent API abuse and handle verification code in the Registration and Login module. 
+                            Resolved session cross-origin sharing using Spring Session.</li>
+                        <li>Designed the data model for the shopping cart and stored cart data in Redis in the Shopping Cart module. 
+                            Managed the storage of shopping items for both temporary and logged-in users.</li>
+                        <li>Ensured interface idempotency by implementing Token and Redis to prevent duplicate form submissions in the Order module. Resolved distributed transaction issues using RabbitMQ. 
+                            Implemented backend validation for login and registration information using JSR303, integrating it with Netflix SMS service.</li>
+                        <li>Utilized Spring Session to store and retrieve user information, expanding session scope for session sharing across different modules. 
+                            Cached user's shopping cart information using Redis and utilized Redis with Lua scripts to prevent duplicate order submissions. 
+                            Employed Redisson, a distributed lock provided by Redis, to prevent concurrent user operations.</li>
+                        <li>Implemented asynchronous locking of inventory using RabbitMQ when placing orders, along with a delayed queue for distributed transactions in the "local message table".</li>
+                        <li>Used Hystrix, provided by Netflix, for service rate limiting and circuit breaking.</li>
+                        <li>Employed Eureka, provided by SpringCloud, for service registration, discovery, and centralized management of configuration files.</li>   
+                    </ul>
+                </div>
                 <!---------------------- proj 1 ---------------------->
                 <div>
                     <h3>Topic Modelling on Google Retrieval History for Enhancing User Experience</h3>

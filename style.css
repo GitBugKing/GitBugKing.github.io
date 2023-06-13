@@ -69,6 +69,15 @@ h1 {
     padding: 60px 50px;
     max-width: 950px;
     overflow: hidden;
+    position: relative;
+}
+
+.content-wrap p {
+    text-align: left;
+}
+
+.content-wrap ul {
+    text-align: left;
 }
 
 @media (min-width: 935px) {
