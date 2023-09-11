@@ -11,18 +11,38 @@
         <header>
             <nav>
                 <a href="#about">About</a>
+                <a href="#skillset">Skillset</a>
                 <a href="#work-experience">Work Experience</a>
                 <a href="#education">Education</a>
                 <a href="#projects">Project</a>
                 <a href="#contact">Contact</a>
             </nav>
+
+        </div>       
             <div id="about" class="content-wrap">
                 <img class="profile-img" src="./assets/IDphoto.jpg" alt="profile photo">
                 <div class="col-wide">
                     <h1>Zheng Liu</h1>
                     <h2>Full-Stack Engineer/Data Engineer</h2>
-                    <p>Software development engineer with experience of building data warehouse and well-structured functional platform and strong background in Computer Science (AI). Skilled in building scalable, high-performance systems and services to support a wide range of business needs. 
+                    <p>Software development engineer with experience of building data warehouse and well-structured functional platform and strong background in Computer Science (AI). 
+                        Skilled in building scalable, high-performance systems and services to support a wide range of business needs. 
                         Interested in cutting-edge technologies and combined them for solving real-world problems and delivering best solutions to real customers.</p>
+
+                </div>
+            </div>
+        </header>
+    </body>
+    <main>
+    <!---------------------- Personal SkillSet ---------------------->
+    <section id="skillset" class="skillset">
+        <div class="skillset-wrapper">
+            <h2>Personal SkillSet</h2>
+            <div class="skill-wrapper">
+                <!---------------------- field 3 ---------------------->
+                <div>
+                    <h3>Software Development Skillset</h3>
+                </div>
+                <div class="skill-description">
                     <ul>
                         <li>Strengthened JAVA fundamentals, comprehended IO, multi-threading, collections, and other basics. Familiarized with commonly used data structures and algorithms.</li>
                         <li>Delved into the underlying principles of JVM and garbage collection mechanisms.</li>
@@ -34,10 +54,29 @@
                         <li>Experienced in designing and applying distributed systems, well-versed in distributed, caching, and messaging mechanisms, with relevant development experience.</li>   
                     </ul>
                 </div>
+                <!---------------------- field 2 ---------------------->
+                <div>
+                    <h3>Data Processing Skillset</h3>
+                </div>
+                <div class="proj-description">
+                    <ul>
+                        <li>abc... ...</li>
+                        <li>def... ...</li> 
+                    </ul>
+                </div>   
+                <!---------------------- field 1 ---------------------->
+                <div>
+                    <h3>Web3 Development Skillset</h3>
+                </div>
+                <div class="proj-description">
+                    <ul>
+                        <li>abc... ...</li>
+                        <li>def... ...</li> 
+                    </ul>
+                </div>                               
             </div>
-        </header>
-    </body>
-    <main>
+        </div>
+    </section>       
     <!---------------------- work experience ---------------------->
     <section id="work-experience" class="work-experience">
         <div class="work-wrapper">
@@ -51,7 +90,7 @@
                 </div>
                 <div class="job-description">
                     <p>Keep Updating... ...</p>
-                    <p>Keep updating... ...</p>
+                    <p>Keep Updating... ...</p>
                     <p><strong>KEY TECHNOLOGIES: </strong>Web3, Smart Contract Development, Solidity, Ethereum, MetaMask, Polygon Mumbai</p>
                 </div>
                 <!---------------------- job 2 ---------------------->
@@ -82,28 +121,6 @@
                     <p><strong>KEY TECHNOLOGIES: </strong>MySQL, Oracle, SQL, Kettle, PowerBI, Java</p>
                 </div>
             </div>
-        </div>
-    </section>
-    <!---------------------- Education ---------------------->
-    <section id="education" class="education">
-        <div class="education-wrapper">
-            <h2>Education</h2>
-            <!------------------ Uni 1 ------------------>
-            <h3>University of Nottingham</h3>
-            <p>Master of Science, major in Artificial Intelligence</p>
-            <ul>
-                <li>Graduation with Merit</li>
-                <li>Core Modules: Machine Learning, Advanced Data Structure and Algorithms, Data Modeling and Analysis, etc.</li>
-                <li>Graduation thesis: Topic Modeling on Google Retrieval History for User Experience</li>
-            </ul>
-            <!------------------ Uni 2 ------------------>
-            <h3>Guangxi Normal University</h3>
-            <p>Bachelor of Science, major in Computer Science</p>
-            <ul>
-                <li>GPA: 3.53/4.0 (85.3% - Top 3)</li>
-                <li>Core Modules: Object-Oriented Programming, Advanced Java Software Development, Computer Network, Operation System, Big Data, Web Design, Database, Linear Algebra and Discrete Mathematics, etc.</li>
-                <li>Graduation thesis: Conversational Chatbot based on DuerOS Core</li>
-            </ul>
         </div>
     </section>
     <!---------------------- Representative projects ---------------------->
@@ -141,7 +158,7 @@
                 </div>
                 <!---------------------- proj 4 ---------------------->
                 <div>
-                    <h3>CoupleEats Take-out System</h3>
+                    <h3><a href="http://154.198.209.6:8088/backend/index.html" target="_blank">CoupleEats Take-out System</a></h3>
                     <p>Apr 2023 - Jun 2023</p>
                 </div>
                 <div class="proj-description">
@@ -155,22 +172,6 @@
                     </ul>
                 </div>
                 <!---------------------- proj 3 ---------------------->
-                <div>
-                    <h3>Topic Modelling on Google Retrieval History for Enhancing User Experience</h3>
-                    <p>July 2022 – Sep 2022</p>
-                </div>
-                <div class="proj-description">
-                    <p>Developed a project using Python for enhancing user retrieval experience that will capture the links user explored, then process and analysis the data applied NLP model, Topics Modelling and Coherence Score, finally generate an API depending on history links.</p>
-                    <ul>
-                        <li>Collected a large dataset from browser search history data through SQLite and save as it a csv file applied file IOFlow operations.</li>
-                        <li>Crawled text content in necessary tags through Beautiful Soup library.</li>
-                        <li>Processed a corpus with almost 300,000 tokens in the format of Bag of Words (BoW) by normalized the format of the search queries using SpaCy and NLTK like removing words of Part of Speech (PoS) and stemming words, converting all words into lower case, lemmatization, tokenization.</li>
-                        <li>Identified common themes and topics that appear in the search queries using Latent Dirichlet Allocation (LDA) and Non-negative Matrix Factorization (NMF) and used 4 CPU cores to parallelize and speed up model training.</li>
-                        <li>Visualized the performance of different models by applying Coherence Score using matplotlib library.</li>
-                        <li>Generated an API of project by using RESTful tool and tested the API through sending HTTP requests on Postman.</li>
-                    </ul>
-                </div>
-                <!---------------------- proj 2 ---------------------->
                 <div>
                     <h3>Target Marketing Platform</h3>
                     <p>Oct 2020 – Mar 2021</p>
@@ -186,6 +187,22 @@
                         <li>Extracted source data from database Oracle and SQL server to DB2 database and normalized data by data cleaning tricks.</li>
                         <li>Loaded data by developing the Shell scripts and monitored the loading progress and database status through Linux Commands for making sure the data warehouse loading correctly.</li>
                         <li>Worked closely with the bank staffs including IT operations and business units, to understand their requirements and make sure all the necessary data captured and stored in the data warehouse.</li>
+                    </ul>
+                </div>                
+                <!---------------------- proj 2 ---------------------->
+                <div>
+                    <h3>Topic Modelling on Google Retrieval History for Enhancing User Experience</h3>
+                    <p>July 2022 – Sep 2022</p>
+                </div>
+                <div class="proj-description">
+                    <p>Developed a project using Python for enhancing user retrieval experience that will capture the links user explored, then process and analysis the data applied NLP model, Topics Modelling and Coherence Score, finally generate an API depending on history links.</p>
+                    <ul>
+                        <li>Collected a large dataset from browser search history data through SQLite and save as it a csv file applied file IOFlow operations.</li>
+                        <li>Crawled text content in necessary tags through Beautiful Soup library.</li>
+                        <li>Processed a corpus with almost 300,000 tokens in the format of Bag of Words (BoW) by normalized the format of the search queries using SpaCy and NLTK like removing words of Part of Speech (PoS) and stemming words, converting all words into lower case, lemmatization, tokenization.</li>
+                        <li>Identified common themes and topics that appear in the search queries using Latent Dirichlet Allocation (LDA) and Non-negative Matrix Factorization (NMF) and used 4 CPU cores to parallelize and speed up model training.</li>
+                        <li>Visualized the performance of different models by applying Coherence Score using matplotlib library.</li>
+                        <li>Generated an API of project by using RESTful tool and tested the API through sending HTTP requests on Postman.</li>
                     </ul>
                 </div>
                 <!---------------------- proj 1 ---------------------->
@@ -203,6 +220,28 @@
                 </div>
 
             </div>
+        </div>
+    </section>
+    <!---------------------- Education ---------------------->
+    <section id="education" class="education">
+        <div class="education-wrapper">
+            <h2>Education</h2>
+            <!------------------ Uni 1 ------------------>
+            <h3>University of Nottingham (QS 100)</h3>
+            <p>Master of Science, major in Artificial Intelligence</p>
+            <ul>
+                <li>Graduation with Merit</li>
+                <li>Core Modules: Machine Learning, Advanced Data Structure and Algorithms, Data Modeling and Analysis, etc.</li>
+                <li>Graduation thesis: Topic Modeling on Google Retrieval History for User Experience</li>
+            </ul>
+            <!------------------ Uni 2 ------------------>
+            <h3>Guangxi Normal University</h3>
+            <p>Bachelor of Science, major in Computer Science</p>
+            <ul>
+                <li>GPA: 3.53/4.0 (85.3% - Top 3)</li>
+                <li>Core Modules: Object-Oriented Programming, Advanced Java Software Development, Computer Network, Operation System, Big Data, Web Design, Database, Linear Algebra and Discrete Mathematics, etc.</li>
+                <li>Graduation thesis: Conversational Chatbot based on DuerOS Core</li>
+            </ul>
         </div>
     </section>
     <main>
