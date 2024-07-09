@@ -146,7 +146,7 @@ h3~p {
 .work-experience {
     padding: 40px 0;
     background: linear-gradient(rgba(141, 153, 174, 0.9), rgba(141, 153, 174, 0.7)),
-                url(./assets/workbg_img.jpg) no-repeat fixed;
+                url(./assets/edubg_img.jpg) no-repeat fixed;
     background-size: cover;
 }
 
@@ -185,10 +185,8 @@ ul {
 
 /* -------------------- Education -------------------- */
 .education {
-    padding: 40px 0;
-    background: linear-gradient(rgba(141, 153, 174, 0.9), rgba(141, 153, 174, 0.7)),
-                url(./assets/edubg_img.jpg) no-repeat fixed;
-    background-size: cover;
+    padding-top: 40px;
+    background-color: #EDF2F4;
 }
 
 .education-wrapper {
@@ -199,6 +197,29 @@ ul {
 
 ul {
     margin-top: 0;
+}
+
+.education-entry {
+    margin-bottom: 20px; /* 为每个条目增加一些间距 */
+}
+
+.education-entry h3 {
+    display: flex; /* 使用 flexbox 布局 */
+    justify-content: space-between; /* 在主轴上对齐，space-between 将项目分散对齐 */
+    align-items: center; /* 在交叉轴上对齐项目，中心对齐 */
+    margin: 0;
+}
+
+.education-entry .location {
+    font-weight: weight;
+    font-size: 0.9em;
+    color: #000;
+    white-space: nowrap; /* 防止城市和国家信息换行 */
+}
+
+.education-entry p, .education-entry ul {
+    margin-top: 10px;
+    width: 100%;
 }
 
 /* -------------------- Representative projects -------------------- */
