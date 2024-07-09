@@ -51,6 +51,7 @@ header {
     text-align: center;
     background-color: #2B2D42;
     color: #8D99AE;
+
 }
 
 header h1, header h2 {
@@ -71,12 +72,20 @@ h1 {
     overflow: hidden;
 }
 
+.content-wrap p {
+    text-align: center;
+}
+
+.content-wrap ul {
+    text-align: left;
+}
+
 @media (min-width: 935px) {
     .content-wrap {
         flex-direction: row;
     }
 }
-    
+
 .profile-img {
     width: 150px;
     height: 150px;
@@ -97,11 +106,47 @@ h1 {
     }
 }
 
-/* -------------------- Work Experience -------------------- */
-
-.work-experience {
+/* -------------------- Personal Skillset -------------------- */
+.skillset {
     padding-top: 40px;
     background-color: #EDF2F4;
+}
+
+.skillset-wrapper {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 950px;
+}
+
+.skill-wrapper {
+    display: block;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 935px) {
+    .skill-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        column-gap: 30px;
+    }
+}
+
+h3~p {
+    margin: 0;
+}
+
+@media (min-width: 935px) {
+    .skill-description p:first-of-type {
+        margin-top: 0;
+    }
+}
+
+/* -------------------- Work Experience -------------------- */
+.work-experience {
+    padding: 40px 0;
+    background: linear-gradient(rgba(141, 153, 174, 0.9), rgba(141, 153, 174, 0.7)),
+                url(./assets/edubg_img.jpg) no-repeat fixed;
+    background-size: cover;
 }
 
 .work-wrapper {
@@ -127,6 +172,10 @@ h3~p {
     margin: 0;
 }
 
+ul {
+    margin-top: 0;
+}
+
 @media (min-width: 935px) {
     .job-description p:first-of-type {
         margin-top: 0;
@@ -135,10 +184,8 @@ h3~p {
 
 /* -------------------- Education -------------------- */
 .education {
-    padding: 40px 0;
-    background: linear-gradient(rgba(141, 153, 174, 0.9), rgba(141, 153, 174, 0.7)),
-                url(./assets/edubg_img.jpg) no-repeat fixed;
-    background-size: cover;
+    padding-top: 40px;
+    background-color: #EDF2F4;
 }
 
 .education-wrapper {
@@ -149,6 +196,29 @@ h3~p {
 
 ul {
     margin-top: 0;
+}
+
+.education-entry {
+    margin-bottom: 20px; /* 为每个条目增加一些间距 */
+}
+
+.education-entry h3 {
+    display: flex; /* 使用 flexbox 布局 */
+    justify-content: space-between; /* 在主轴上对齐，space-between 将项目分散对齐 */
+    align-items: center; /* 在交叉轴上对齐项目，中心对齐 */
+    margin: 0;
+}
+
+.education-entry .location {
+    font-weight: weight;
+    font-size: 0.9em;
+    color: #000;
+    white-space: nowrap; /* 防止城市和国家信息换行 */
+}
+
+.education-entry p, .education-entry ul {
+    margin-top: 10px;
+    width: 100%;
 }
 
 /* -------------------- Representative projects -------------------- */
