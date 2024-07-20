@@ -132,11 +132,19 @@ h1 {
 }
 
 .project-cover {
-  width: 328px;
-  height: 328px;
   display: block;
   margin: 10px auto 20px;
   object-fit: cover; /* 确保图片内容不变形 */
+}
+
+.project-cover-tall {
+  width: 328px;
+  height: 500px;
+}
+
+.project-cover-wide {
+  width: 600px;
+  height: 328px;
 }
 
 /* -------------------- Footer -------------------- */

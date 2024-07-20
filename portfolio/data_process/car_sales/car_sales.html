@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Car Sales BI Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="../../../index.html">Home</a>
+        <a href="../dataProcess.html">Data Processing</a>
+        <a href="../../webapps/webapp.html">Web Apps</a>
+        <a href="../../devops/#devops.html">DevOps</a>
+    </nav>
+
+    <!-- 项目展示 -->
+    <div class="project-wrapper">
+        <h2>Car Sales Dashboard</h2>
+        <div class="entry">
+            <p><strong>The Car Sales Dashboard is a comprehensive Business Intelligence (BI) project designed to provide detailed insights into car sales data. This project aims to centralize and visualize sales data, allowing for interactive exploration and analysis. The dashboard leverages the capabilities of Power BI to offer real-time insights and detailed breakdowns of sales performance.</strong></p>
+            
+            <h4>Data Sources and Architecture:</h4>
+            <ul>
+                <li><strong>Data Sources:</strong> The data is sourced from publicly available datasets, initially downloaded to local storage and later upgraded to Google Sheets for seamless integration using the CSV API.</li>
+                <li><strong>Data Processing:</strong> Power Query is used to quickly standardize the data, ensuring consistency and accuracy. This involves cleaning, transforming, and loading the data into Power BI.</li>
+                <li><strong>Architecture:</strong> The architecture includes a data warehouse built using Power BI Desktop, with the dashboard designed in a sleek, black "cool" theme that aligns with the automotive industry's aesthetic.</li>
+            </ul>
+
+            <h4>Key Performance Indicators (KPIs) and Reports:</h4>
+            <ul>
+                <li><strong>KPIs:</strong> Year-to-Date (YTD) Total Sales, Month-to-Date (MTD) Total Sales, YTD Average Price, YTD Cars Sold, MTD Average Price, and MTD Cars Sold.</li>
+                <li><strong>Reports:</strong> The dashboard includes multiple reports, such as weekly sales trends, total sales by body style and color, regional sales distribution, and company-wise sales trends.</li>
+            </ul>
+
+            <h4>Data Visualizations:</h4>
+            <p><strong>Sales Overview:</strong></p>
+            <div class="image-wrapper">
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiZWI3NDhlYzItZGM1Yy00YThiLTg0M2QtM2Y5ZWZiNTM2NjgwIiwidCI6IjI2Y2NmYmI0LTc4MTYtNGY0My1hMjM2LWI2ZmZmYjg0Y2ZjMSIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener">
+                    <img src="./Car_Sales_Dashboard.png" alt="Car Sales Dashboard Overview">
+                </a>
+                <span class="hover-text" id="hover-text">See Details</span>
+            </div>
+            <ul>
+                <li>YTD Total Sales: $371.2M</li>
+                <li>YTD Average Price: $28.0K</li>
+                <li>YTD Cars Sold: 13.3K</li>
+                <li>Weekly Sales Trend: Line chart displaying weekly sales performance.</li>
+                <li>Total Sales by Body Style: Pie chart showing sales distribution across different car body styles.</li>
+                <li>Total Sales by Color: Pie chart depicting sales distribution by car color.</li>
+                <li>Regional Sales: Map showing YTD cars sold by dealer regions.</li>
+                <li>Company-Wise Sales Trend: Bar charts showing sales metrics for different car companies.</li>
+            </ul>
+            <p><strong>Sales Details:</strong></p>
+            <div class="image-wrapper">
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiZWI3NDhlYzItZGM1Yy00YThiLTg0M2QtM2Y5ZWZiNTM2NjgwIiwidCI6IjI2Y2NmYmI0LTc4MTYtNGY0My1hMjM2LWI2ZmZmYjg0Y2ZjMSIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener">
+                    <img src="./Car_Sales_Details.png" alt="Car Sales Dashboard Details">
+                </a>
+                <span class="hover-text" id="hover-text-details">See Details</span>
+            </div>
+            <ul>
+                <li>Detailed table listing individual car sales, including car ID, sale date, customer name, dealer name, car company, color, model, and total sales amount.</li>
+            </ul>
+
+            <div class="entry-row">
+                <div class="entry-column">
+                    <h4>Data Model Relationship:</h4>
+                    <img src="./data_model.png" alt="Data Model Relationship">
+                    <p>To implement KPI calculations, the data model design involves a one-to-many relationship between the date table and the main table.</p>
+                </div>
+                <div class="entry-column">
+                    <h4>Power Query:</h4>
+                    <img src="./power_query.png" alt="Power Query Page">
+                    <p>Performed data normalization, ensured no error data, no empty data, and handled special character replacement.</p>
+                </div>
+            </div>
+
+            <h4>User Interaction:</h4>
+            <ul>
+                <li>The dashboard includes filters for body style, dealer name, transmission type, and engine type, allowing users to customize their view and analyze specific segments of data.</li>
+                <li>Users can switch between the overview page and detailed sales data page for a more granular analysis.</li>
+            </ul>
+            <p><strong>Conclusion:</strong></p>
+            <p>The Car Sales Dashboard provides a powerful tool for analyzing car sales data, offering both high-level insights and detailed views. The interactive design and robust data integration make it an invaluable resource for decision-makers in the automotive industry. This project showcases the effective use of BI tools to turn raw data into actionable intelligence.</p>
+
+            <!-- Button to toggle the hidden content -->
+            <div class="button-container">
+                <button class="toggle-button" onclick="toggleContent()">Next Phase...</button>
+            </div>
+            <!-- Hidden content -->
+            <div id="hiddenContent" class="hidden-content"></div>
+        </div>
+    </div>
+
+    <!-- Contact Info -->
+    <footer id="contact">
+        <div class="contact-wrapper">
+            <h2>Let's keep in touch!</h2>
+            <div class="contact-buttons">
+                <a href="https://github.com/GitBugKing" target="_blank" rel="noopener">
+                    <img class="media-pic" src="../../../assets/github-mark.jpg" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/zheng-liu-392b40232/" target="_blank" rel="noopener">
+                    <img class="media-pic" src="../../../assets/linkedin.jpg" alt="LinkedIn">
+                </a>
+                <a href="mailto:ukmrbug@outlook.com" target="_blank" rel="noopener">
+                    <img class="media-pic" src="../../../assets/Outlook.jpg" alt="Outlook Email">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const imageWrapper = document.querySelectorAll('.image-wrapper');
+        const hoverText = document.querySelectorAll('.hover-text');
+
+        imageWrapper.forEach((wrapper, index) => {
+            wrapper.addEventListener('mousemove', (e) => {
+                const rect = wrapper.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                hoverText[index].style.left = `${x}px`;
+                hoverText[index].style.top = `${y}px`;
+                hoverText[index].style.opacity = 1;
+            });
+
+            wrapper.addEventListener('mouseleave', () => {
+                hoverText[index].style.opacity = 0;
+            });
+        });
+
+        function toggleContent() {
+            const content = document.getElementById('hiddenContent');
+            if (!content.classList.contains('show-content')) {
+                fetch('next_phase.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        content.innerHTML = data;
+                        content.classList.add('show-content');
+                    })
+                    .catch(error => console.error('Error loading content:', error));
+            } else {
+                content.classList.remove('show-content');
+                content.innerHTML = '';
+            }
+        }
+    </script>
+</body>
+</html>

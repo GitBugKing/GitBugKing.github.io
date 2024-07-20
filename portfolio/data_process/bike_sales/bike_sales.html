@@ -1,92 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bike Store Sales BI Dashboard</title>
+    <title>North American Bike Sales BI Dashboard</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700" rel="stylesheet">
-    <style>
-        .image-wrapper {
-            position: relative;
-            display: inline-block;
-        }
-
-        .hover-text {
-            position: absolute;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            opacity: 0;
-            transition: opacity 0.3s;
-            pointer-events: none; /* 使其不影响鼠标事件 */
-        }
-
-        .image-wrapper img {
-            width: 100%; /* 确保图片自适应容器 */
-        }
-
-        nav {
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            background-color: white;
-            top: 0;
-        }
-
-        nav a {
-            display: inline-block;
-            margin: 5px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 11px;
-            text-transform: uppercase;
-            color: #2B2D42;
-        }
-
-        @media (min-width: 440px) {
-            nav a {
-                margin: 14px;
-                font-size: 16px;
-            }
-        }
-    </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav>
-        <a href="../../index.html">Home</a>
+        <a href="../../../index.html">Home</a>
         <a href="../dataProcess.html">Data Processing</a>
+        <a href="../../webapps/webapp.html">Web Apps</a>
+        <a href="../../devops/#devops.html">DevOps</a>
     </nav>
 
-    <!-- Data Processing Projects -->
-    <section id="data-processing" class="project-section">
-        <div class="project-wrapper">
-            <h2>North American Bike Sales Dashboard</h2>
-            <div class="entry">
-                <p><strong>In this project, I developed a comprehensive Business Intelligence (BI) dashboard to showcase North American bike sales data. The dashboard integrates data from multiple sources, centralized through a data warehouse, enabling efficient data analysis and reporting.</strong></p>  
-                <a href="https://public.tableau.com/app/profile/vincent.lau6085/viz/dev-bike-store-dashboard/BikeSalesDashboard" target="_blank" rel="noopener" class="image-wrapper">
+    <!-- Project Display -->
+    <div class="project-wrapper">
+        <h2>North American Bike Sales Dashboard</h2>
+        <div class="entry">
+            <p><strong>This project involves developing a comprehensive Business Intelligence (BI) dashboard to showcase North American bike sales data from 2016 to 2024. The dashboard integrates data from multiple sources, centralized through a data warehouse, enabling efficient data analysis and reporting.</strong></p>  
+            <div class="image-wrapper">
+                <a href="https://public.tableau.com/app/profile/vincent.lau6085/viz/dev-bike-store-dashboard/BikeSalesDashboard" target="_blank" rel="noopener">
                     <img src="./Bike Sales Dashboard.png" alt="Bike Store Sales Dashboard">
-                    <span class="hover-text" id="hover-text">See Details</span>
                 </a>
-                <h4>Key Technologies:</h4>
-                <ul>
-                    <li>Database: Utilized PostgreSQL hosted on AWS RDS to store and manage bike sales data.</li>
-                    <li>Data Warehouse: Built a data warehouse to integrate various data sources, facilitating unified data analysis and reporting.</li>
-                    <li>ETL Process: Designed and implemented an ETL process to extract raw data into the data warehouse, perform data cleansing and transformation.</li>
-                    <li>Data Visualization: Developed the BI dashboard using Tableau to visually present key sales metrics and trends.</li>
-                    <li>Performance Optimization: Optimized database performance, including index optimization, query optimization, and database schema optimization to ensure fast data retrieval and reporting.</li>
-                </ul>
-                <h4>Project Highlights:</h4>
-                <ul>
-                    <li>Integration of Multiple Data Sources: The centralized data warehouse integrated data from various sources, providing a unified data view.</li>
-                    <li>Efficient Data Visualization: Developed interactive dashboards to display KPIs, helping business users quickly understand and analyze sales data.</li>
-                    <li>Database Performance Optimization: Enhanced database performance through index and schema optimization, significantly improving query performance and response time, supporting large-scale data processing and analysis needs.</li>
-                </ul>
-                <p>This project demonstrates my comprehensive skills in data processing, database management, and data visualization, effectively transforming complex data into valuable business insights.</p>
+                <span class="hover-text" id="hover-text">See Details</span>
             </div>
+            
+            <h4>Data Sources and Architecture:</h4>
+            <ul>
+                <li><strong>Database:</strong> Utilized PostgreSQL hosted on AWS RDS to store and manage bike sales data.</li>
+                <li><strong>Data Warehouse:</strong> Built a data warehouse to integrate various data sources, facilitating unified data analysis and reporting.</li>
+                <li><strong>ETL Process:</strong> Designed and implemented an ETL process to extract raw data into the data warehouse, perform data cleansing and transformation.</li>
+                <li><strong>Data Visualization:</strong> Developed the BI dashboard using Tableau to visually present key sales metrics and trends.</li>
+                <li><strong>Performance Optimization:</strong> Optimized database performance, including index optimization, query optimization, and database schema optimization to ensure fast data retrieval and reporting.</li>
+            </ul>
+
+            <h4>Key Insights:</h4>
+            <p>Based on the data visualizations of key performance indicators (KPIs) and reports, the dashboard reveals:</p>
+            <ul>
+                <li>Bike usage is higher in certain regions, correlating with local weather and seasonal sales trends.</li>
+                <li>The brand "Trek" and the category "road bike" show the strongest sales performance.</li>
+                <li>Top-performing sales representatives and most valuable customers have been identified.</li>
+            </ul>
+
+            <h4>Project Highlights:</h4>
+            <ul>
+                <li><strong>Integration of Multiple Data Sources:</strong> The centralized data warehouse integrated data from various sources, providing a unified data view.</li>
+                <li><strong>Efficient Data Visualization:</strong> Developed interactive dashboards to display KPIs, helping business users quickly understand and analyze sales data.</li>
+                <li><strong>Database Performance Optimization:</strong> Enhanced database performance through index and schema optimization, significantly improving query performance and response time, supporting large-scale data processing and analysis needs.</li>
+            </ul>
+
+            <p>This project demonstrates my comprehensive skills in data processing, database management, and data visualization, effectively transforming complex data into valuable business insights.</p>
         </div>
-    </section>
+    </div>
 
     <!-- Contact Info -->
     <footer id="contact">
