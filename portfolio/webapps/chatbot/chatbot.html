@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Vincent Lau's Projects</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700" rel="stylesheet">
+    <style>
+        .image-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        .hover-text {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+        }
+
+        nav {
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            background-color: white;
+            top: 0;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 5px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #2B2D42;
+        }
+
+        @media (min-width: 440px) {
+            nav a {
+                margin: 14px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="../../../index.html">Home</a>
+        <a href="../../data_process/dataProcess.html">Data Processing</a>
+        <a href="../webapp.html">Software Development</a>
+        <a href="../../devops/devops.html">Technical Support</a>
+    </nav>
+
+    <!-- Conversational Chatbot based on DuerOS Core Project -->
+    <section id="dueros-chatbot" class="project-section">
+        <div class="project-wrapper">
+            <h2>Conversational Chatbot based on DuerOS Core</h2>
+            <div class="entry">
+                <p><strong>In this project, I developed a conversational chatbot using DuerOS Core, a voice chip provided by Baidu. The project combines the DuerOS Core with a Raspberry Pi, utilizing the DuerOS SDK to achieve an intelligent conversation process.</strong></p>
+                <a href="https://www.bilibili.com/video/BV1fz4y1X7EZ/?spm_id_from=333.999.0.0&vd_source=e71efb922b11b33c1b1ab0ac45e71ca8" target="_blank" rel="noopener" class="image-wrapper">
+                    <img src="../img/DuerOS_Chatbot.png" alt="Conversational Chatbot based on DuerOS Core">
+                    <span class="hover-text" id="hover-text">See Details</span>
+                </a>
+                <h4>Project Details:</h4>
+                <ul>
+                    <li>Hardware Integration: Combined DuerOS Core chip with Raspberry Pi, providing the hardware foundation for voice interaction.</li>
+                    <li>Networking: Connected Raspberry Pi to the internet to obtain necessary voice resource SDK.</li>
+                    <li>SDK Integration: Installed and configured the DuerOS SDK on Raspberry Pi, using Python to call the SDK API for voice recognition and semantic understanding.</li>
+                    <li>Intelligent Dialogue System Development: Developed natural language processing modules to handle user voice input and extract useful information.</li>
+                    <li>Testing and Optimization: Conducted multiple rounds of testing to ensure the stability and accuracy of the dialogue system, optimizing dialogue logic and voice processing algorithms to improve system response speed and user experience.</li>
+                </ul>
+                <h4>Project Highlights:</h4>
+                <ul>
+                    <li>Successfully developed an intelligent dialogue robot capable of smooth voice interaction with users.</li>
+                    <li>Implemented various functions including weather query, news broadcast, music playback, greatly enhancing user convenience.</li>
+                    <li>Demonstrated the powerful functions of DuerOS Core chip and the programmability of Raspberry Pi, showing broad application prospects.</li>
+                </ul>
+                <p>This project showcases my comprehensive skills in hardware integration, networking, SDK integration, and natural language processing, effectively creating a smart voice interaction system.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <footer id="contact">
+        <div class="contact-wrapper">
+            <h2>Let's keep in touch!</h2>
+            <div class="contact-buttons">
+                <a href="https://github.com/GitBugKing" target="_blank" rel="noopener">
+                    <img class="media-pic" src="../../../assets/github-mark.jpg" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/zheng-liu-392b40232/" target="_blank" rel="noopener">
+                    <img class="media-pic" src="../../../assets/linkedin.jpg" alt="LinkedIn">
+                </a>
+                <a href="mailto:ukmrbug@outlook.com" target="_blank" rel="noopener">
+                    <img class="media-pic" src="../../../assets/Outlook.jpg" alt="Outlook Email">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const imageWrapper = document.querySelector('.image-wrapper');
+        const hoverText = document.getElementById('hover-text');
+
+        imageWrapper.addEventListener('mousemove', (e) => {
+            const rect = imageWrapper.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            hoverText.style.left = `${x}px`;
+            hoverText.style.top = `${y}px`;
+            hoverText.style.opacity = 1;
+        });
+
+        imageWrapper.addEventListener('mouseleave', () => {
+            hoverText.style.opacity = 0;
+        });
+    </script>
+</body>
+</html>

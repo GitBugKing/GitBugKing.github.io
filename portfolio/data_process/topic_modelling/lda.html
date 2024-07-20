@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Topic Modeling and Analysis System</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="../../../index.html">Home</a>
+        <a href="../dataProcess.html">Data Processing</a>
+        <a href="../../webapps/webapp.html">Web Apps</a>
+        <a href="../../devops/#devops.html">DevOps</a>
+    </nav>
+
+    <!-- Project Overview -->
+    <section id="project-overview" class="project-section">
+        <div class="project-wrapper">
+            <h2>Topic Modeling and Analysis System</h2>
+            <div class="entry">
+                <h3>Objective</h3>
+                <p>The goal of this project is to implement Latent Dirichlet Allocation (LDA) for topic modeling to identify and analyze hidden thematic structures within a large collection of textual data. This project aims to provide insights into the main topics discussed in the dataset and to help categorize and summarize the content effectively.</p>
+                <div class="image-wrapper">
+                    <a href="https://github.com/GitBugKing/GitBugKing-Topic-Modelling-on-Google-Retrieval-History-for-Enhancing-User-Experience" target="_blank" rel="noopener">
+                        <img src="./LDA.png" alt="Text Topic Modeling System">
+                        <span class="hover-text" id="hover-text">See Details</span>
+                    </a>
+                </div>
+
+                <h3>Project Description</h3>
+                
+                <h4>Data Collection</h4>
+                <p>Gather a substantial corpus of text data from various sources relevant to the study. This can include articles, blogs, reviews, research papers, or any textual content suitable for topic modeling.</p>
+                
+                <h4>Data Preprocessing</h4>
+                <p>Clean and preprocess the text data by performing steps such as tokenization, removing stop words, stemming, and lemmatization. Ensure the data is in a format suitable for LDA input.</p>
+                
+                <h4>Exploratory Data Analysis (EDA)</h4>
+                <p>Conduct an initial analysis of the data to understand its structure and key characteristics. Visualize the data distribution, word frequency, and other relevant metrics.</p>
+                
+                <h4>Model Implementation</h4>
+                <p>Implement the LDA algorithm using a suitable library such as Gensim or Scikit-learn. Determine the optimal number of topics through methods like coherence scores or perplexity.</p>
+                
+                <h4>Model Training</h4>
+                <p>Train the LDA model on the preprocessed dataset. Tune hyperparameters to achieve the best performance and ensure the model accurately captures the underlying topics.</p>
+                
+                <h4>Hyperparameter Tuning</h4>
+                <ul>
+                    <li>Optimize key hyperparameters such as the number of topics (num_topics), document-topic distribution prior (alpha), topic-word distribution prior (beta), and the number of iterations.</li>
+                    <li>Utilize methods such as grid search, random search, or Bayesian optimization to find the best parameter settings.</li>
+                    <li>Evaluate model performance using coherence scores and perplexity to ensure the topics are meaningful and interpretable.</li>
+                </ul>
+                
+                <h4>Topic Extraction and Visualization</h4>
+                <p>Extract the topics identified by the LDA model along with their associated keywords. Visualize the topics using techniques such as word clouds, topic distribution charts, and intertopic distance maps.</p>
+                
+                <h4>Topic Analysis and Interpretation</h4>
+                <p>Analyze the extracted topics to interpret their meaning and relevance. Label the topics based on the keywords and context, and provide a comprehensive summary of each topic.</p>
+                
+                <h4>Application and Insights</h4>
+                <p>Apply the model to new text data to demonstrate its effectiveness in identifying topics in unseen documents. Discuss the insights gained from the topic analysis and potential applications in areas such as content recommendation, document clustering, and trend analysis.</p>
+                
+                <h4>API Development</h4>
+                <ul>
+                    <li>Develop a RESTful API using Flask or FastAPI to serve the LDA model, allowing users to submit text data and receive topic modeling results.</li>
+                    <li>Implement endpoints for data preprocessing, model training, and topic extraction.</li>
+                    <li>Ensure the API is well-documented, secure, and scalable to handle multiple requests.</li>
+                </ul>
+                
+                <h4>Reporting and Documentation</h4>
+                <ul>
+                    <li>Compile a detailed report documenting the methodology, implementation, results, and conclusions. Include visualizations, model performance metrics, and interpretations to support the findings.</li>
+                    <li>Provide API documentation detailing the usage, endpoints, and example requests/responses.</li>
+                </ul>
+                
+                <h3>Tools and Technologies</h3>
+                <ul>
+                    <li>Programming Languages: Python</li>
+                    <li>Libraries: Gensim, Scikit-learn, NLTK, SpaCy, Matplotlib, Seaborn, Flask/FastAPI (for API development)</li>
+                    <li>Data Visualization Tools: Wordcloud, PyLDAvis</li>
+                    <li>Documentation: Jupyter Notebook, Markdown, Swagger/OpenAPI (for API documentation)</li>
+                </ul>
+                
+                <h3>Expected Outcomes</h3>
+                <ul>
+                    <li>A trained LDA model capable of identifying and extracting meaningful topics from the text corpus.</li>
+                    <li>Visualizations and reports that effectively communicate the topics and insights derived from the analysis.</li>
+                    <li>A RESTful API that provides easy access to the LDA model for topic modeling on new text data.</li>
+                    <li>Practical applications of the model in real-world scenarios, demonstrating its value in text analysis and content categorization.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <footer id="contact">
+        <div class="contact-wrapper">
+            <h2>Let's keep in touch!</h2>
+            <div class="contact-buttons">
+                <a href="https://github.com/GitBugKing" target="_blank" rel="noopener">
+                    <img class="media-pic" src="../../../assets/github-mark.jpg" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/zheng-liu-392b40232/" target="_blank" rel="noopener">
+                    <img class="media-pic" src="../../../assets/linkedin.jpg" alt="LinkedIn">
+                </a>
+                <a href="mailto:ukmrbug@outlook.com" target="_blank" rel="noopener">
+                    <img class="media-pic" src="../../../assets/Outlook.jpg" alt="Outlook Email">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const imageWrapper = document.querySelector('.image-wrapper');
+        const hoverText = document.getElementById('hover-text');
+
+        imageWrapper.addEventListener('mousemove', (e) => {
+            const rect = imageWrapper.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            hoverText.style.left = `${x}px`;
+            hoverText.style.top = `${y}px`;
+            hoverText.style.opacity = 1;
+        });
+
+        imageWrapper.addEventListener('mouseleave', () => {
+            hoverText.style.opacity = 0;
+        });
+    </script>
+</body>
+</html>
