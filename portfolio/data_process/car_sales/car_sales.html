@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Car Sales BI Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700" rel="stylesheet">
 </head>
 <body>
@@ -89,7 +89,30 @@
                 <button class="toggle-button" onclick="toggleContent()">Next Phase...</button>
             </div>
             <!-- Hidden content -->
-            <div id="hiddenContent" class="hidden-content"></div>
+            <div id="hiddenContent" class="hidden-content">
+                <div class="content-wrapper">
+                    <h2>Next Phase Development Goals</h2>
+                    <p>To further enhance the Car Sales Dashboard, the following development goals are proposed for the next phase:</p>
+
+                    <h3>1. Transition to Azure SQL Server</h3>
+                    <p>Switching the data source to Azure SQL Server offers multiple benefits including enhanced reliability, performance, security, and scalability. This will also ensure seamless integration with other Azure services.</p>
+
+                    <h3>2. Optimize Data Model</h3>
+                    <p>Create star or snowflake schema models to optimize query performance and manage data efficiently. Use indexing and partitioning to further speed up data retrieval.</p>
+
+                    <h3>3. Implement Incremental Data Loading</h3>
+                    <p>Implementing incremental data loading will enhance the efficiency of data updates, reduce processing times, and support near real-time data insights.</p>
+
+                    <h3>4. Enhance Power BI Reports</h3>
+                    <p>Optimize the Power BI data model, use parameters and slicers to improve user interaction, and enhance the visual appeal of reports for better data comprehension.</p>
+
+                    <h3>5. Data Governance and Security</h3>
+                    <p>Implement data governance policies to maintain data quality and consistency. Use Azure Active Directory for authentication and access control to secure sensitive data.</p>
+
+                    <h3>6. Implement Data Pipeline and CI/CD</h3>
+                    <p>Create a robust data pipeline using Azure Data Factory for automated ETL processes. Implement CI/CD using Azure DevOps to automate testing and deployment, ensuring quick and reliable updates.</p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -133,16 +156,9 @@
         function toggleContent() {
             const content = document.getElementById('hiddenContent');
             if (!content.classList.contains('show-content')) {
-                fetch('next_phase.html')
-                    .then(response => response.text())
-                    .then(data => {
-                        content.innerHTML = data;
-                        content.classList.add('show-content');
-                    })
-                    .catch(error => console.error('Error loading content:', error));
+                content.classList.add('show-content');
             } else {
                 content.classList.remove('show-content');
-                content.innerHTML = '';
             }
         }
     </script>
