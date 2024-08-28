@@ -1,0 +1,88 @@
+/* Project Section */
+.project-section {
+  padding: 40px 0;
+  background-color: #EDF2F4;
+}
+
+.project-wrapper {
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 950px;
+}
+
+.project-section h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #2B2D42;
+  margin-bottom: 40px;
+}
+
+.entry {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.entry h3 {
+  margin: 0 0 10px 0;
+}
+
+.entry img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.entry h4 {
+  margin-top: 20px;
+}
+
+.entry ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.entry p, .entry ul, .entry h4 {
+  color: #2B2D42;
+}
+
+/* Contact Info */
+footer {
+  text-align: center;
+  background-color: #2B2D42;
+  color: #8D99AE;
+}
+
+.contact-wrapper {
+  margin: 0 auto;
+  padding: 50px 0;
+  max-width: 900px;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.media-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: #8D99AE solid 2px;
+}
+
+.media-pic:hover {
+  transform: scale(1.1);
+}
+
+p+h3 {
+  margin-top: 30px;
+}
+
+footer p {
+  margin-top: 50px;
+}

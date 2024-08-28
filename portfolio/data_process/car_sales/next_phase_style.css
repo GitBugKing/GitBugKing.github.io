@@ -1,0 +1,26 @@
+/* Global Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #EDF2F4;
+}
+
+h2, h3 {
+  color: #2B2D42;
+}
+
+p {
+  color: #2B2D42;
+  margin-bottom: 20px;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 950px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}

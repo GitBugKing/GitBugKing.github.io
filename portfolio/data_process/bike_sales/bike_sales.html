@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>North American Bike Sales BI Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="../../../index.html">Home</a>
+        <a href="../dataProcess.html">Data Processing</a>
+        <a href="../../webapps/webapp.html">Web Apps</a>
+        <a href="../../devops/#devops.html">DevOps</a>
+    </nav>
+
+    <!-- Project Display -->
+    <div class="project-wrapper">
+        <h2>North American Bike Sales Dashboard</h2>
+        <div class="entry">
+            <p><strong>This project involves developing a comprehensive Business Intelligence (BI) dashboard to showcase North American bike sales data from 2016 to 2024. The dashboard integrates data from multiple sources, centralized through a data warehouse, enabling efficient data analysis and reporting.</strong></p>  
+            <div class="image-wrapper">
+                <a href="https://public.tableau.com/app/profile/vincent.lau6085/viz/dev-bike-store-dashboard/BikeSalesDashboard" target="_blank" rel="noopener">
+                    <img src="./Bike Sales Dashboard.png" alt="Bike Store Sales Dashboard">
+                </a>
+                <span class="hover-text" id="hover-text">See Details</span>
+            </div>
+            
+            <h4>Data Sources and Architecture:</h4>
+            <ul>
+                <li><strong>Database:</strong> Utilized PostgreSQL hosted on AWS RDS to store and manage bike sales data.</li>
+                <li><strong>Data Warehouse:</strong> Built a data warehouse to integrate various data sources, facilitating unified data analysis and reporting.</li>
+                <li><strong>ETL Process:</strong> Designed and implemented an ETL process to extract raw data into the data warehouse, perform data cleansing and transformation.</li>
+                <li><strong>Data Visualization:</strong> Developed the BI dashboard using Tableau to visually present key sales metrics and trends.</li>
+                <li><strong>Performance Optimization:</strong> Optimized database performance, including index optimization, query optimization, and database schema optimization to ensure fast data retrieval and reporting.</li>
+            </ul>
+
+            <h4>Key Insights:</h4>
+            <p>Based on the data visualizations of key performance indicators (KPIs) and reports, the dashboard reveals:</p>
+            <ul>
+                <li>Bike usage is higher in certain regions, correlating with local weather and seasonal sales trends.</li>
+                <li>The brand "Trek" and the category "road bike" show the strongest sales performance.</li>
+                <li>Top-performing sales representatives and most valuable customers have been identified.</li>
+            </ul>
+
+            <h4>Project Highlights:</h4>
+            <ul>
+                <li><strong>Integration of Multiple Data Sources:</strong> The centralized data warehouse integrated data from various sources, providing a unified data view.</li>
+                <li><strong>Efficient Data Visualization:</strong> Developed interactive dashboards to display KPIs, helping business users quickly understand and analyze sales data.</li>
+                <li><strong>Database Performance Optimization:</strong> Enhanced database performance through index and schema optimization, significantly improving query performance and response time, supporting large-scale data processing and analysis needs.</li>
+            </ul>
+
+            <p>This project demonstrates my comprehensive skills in data processing, database management, and data visualization, effectively transforming complex data into valuable business insights.</p>
+        </div>
+    </div>
+
+    <!-- Contact Info -->
+    <footer id="contact">
+        <div class="contact-wrapper">
+            <h2>Let's keep in touch!</h2>
+            <div class="contact-buttons">
+                <a href="https://github.com/GitBugKing" target="_blank" rel="noopener">
+                    <img class="media-pic" src="../../../assets/github-mark.jpg" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/zheng-liu-392b40232/" target="_blank" rel="noopener">
+                    <img class="media-pic" src="../../../assets/linkedin.jpg" alt="LinkedIn">
+                </a>
+                <a href="mailto:ukmrbug@outlook.com" target="_blank" rel="noopener">
+                    <img class="media-pic" src="../../../assets/Outlook.jpg" alt="Outlook Email">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const imageWrapper = document.querySelector('.image-wrapper');
+        const hoverText = document.getElementById('hover-text');
+
+        imageWrapper.addEventListener('mousemove', (e) => {
+            const rect = imageWrapper.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            hoverText.style.left = `${x}px`;
+            hoverText.style.top = `${y}px`;
+            hoverText.style.opacity = 1;
+        });
+
+        imageWrapper.addEventListener('mouseleave', () => {
+            hoverText.style.opacity = 0;
+        });
+    </script>
+</body>
+</html>
